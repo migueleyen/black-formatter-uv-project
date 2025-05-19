@@ -1,0 +1,13 @@
+[project]
+name = "02-black-formatter-uv-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.black]
+skip-string-normalization = true
+skip-magic-trailing-comma = false 
+line-length = 75
+target-version = ['py39'] # (if py34: No trailing comma after *args because Python 3.4 does not support it
